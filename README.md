@@ -1,4 +1,3 @@
-```markdown
 # PROYECTO FINAL
 
 <details>
@@ -69,7 +68,3 @@ Por ejemplo:
 6. Guarda el HTML resultante en un archivo.
 
 </details>
-```
-
-
-This adds the title "PROYECTO FINAL" and a collapsible sub-title "T2 - Documentos XML y vistas HTML mediante XSLT" containing your original README content. The `<details>` and `<summary>` tags are used to create the collapsible section.  This works well in GitHub and other markdown renderers.
