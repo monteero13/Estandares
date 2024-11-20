@@ -1,3 +1,9 @@
+```markdown
+# PROYECTO FINAL
+
+<details>
+  <summary><h2>T2 - Documentos XML y vistas HTML mediante XSLT</h2></summary>
+
 # Conversor JSON a HTML via MongoDB, XSLT
 
 Este script Python realiza consultas a una base de datos MongoDB, transforma los resultados a XML y luego aplica una transformación XSLT para generar un documento HTML.
@@ -61,3 +67,9 @@ Por ejemplo:
 4. Convierte los resultados de la consulta a formato XML.
 5. Aplica la transformación XSLT al XML.
 6. Guarda el HTML resultante en un archivo.
+
+</details>
+```
+
+
+This adds the title "PROYECTO FINAL" and a collapsible sub-title "T2 - Documentos XML y vistas HTML mediante XSLT" containing your original README content. The `<details>` and `<summary>` tags are used to create the collapsible section.  This works well in GitHub and other markdown renderers.
