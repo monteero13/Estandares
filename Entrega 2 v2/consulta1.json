@@ -1,0 +1,35 @@
+// Coleccion: Pruebas
+
+// Esta consulta realiza una agregación en la colección "pruebas" para obtener información sobre las pruebas PCR positivas y su relación con las vacunaciones. 
+// Filtra los documentos de pruebas donde el tipo es "PCR" y el resultado es "Positivo", luego utiliza un $lookup para unir la información de la colección "Vacunaciones" 
+// basada en el campo "id_paciente". Posteriormente, se deshace de los arrays anidados usando $unwind y, finalmente, proyecta los campos relevantes: 
+// "id_paciente", "fecha_prueba", "nombre_vacuna", "dosis" y "fecha_vacunacion" del documento resultante.
+
+[
+  {
+    "$match": {
+      "tipo": "PCR",
+      "resultado": "Positivo"
+    }
+  },
+  { 
+    "$lookup": {
+            "from": "Vacunaciones",
+            "localField": "id_paciente",
+            "foreignField": "id_paciente",
+            "as": "vacunacion_info"
+    }
+  },
+  { "$unwind": "$vacunacion_info"},
+  { "$unwind": "$vacunacion_info.vacunacion"},
+ {
+    "$project": {
+      "_id": 0,
+      "id_paciente": 1,
+      "fecha_prueba": "$fecha",
+      "nombre_vacuna": "$vacunacion_info.vacunacion.vacuna.nombre",
+      "dosis": "$vacunacion_info.vacunacion.dosis",
+      "fecha_vacunacion": "$vacunacion_info.vacunacion.fecha"
+    }
+  }
+]

@@ -1,0 +1,74 @@
+// Coleccion: Hospitalizaciones
+
+// Esta consulta realiza una agregación para obtener información sobre pacientes con un estado de severidad "Moderado",
+// su hospitalización y su primera prueba PCR positiva.
+// 1. Primero, utiliza un $match para filtrar los documentos donde la severidad del estado del paciente sea "Moderado".
+// 2. Luego, realiza un $lookup para unir la colección "Hospitalizaciones" con la colección actual ("Pruebas") a través del campo "id_paciente",
+//    obteniendo información sobre la hospitalización del paciente.
+// 3. Usa un $unwind sobre "hospitalizacion_info" para desestructurar el array y trabajar con cada hospitalización individualmente.
+// 4. Después, realiza un segundo $lookup para obtener la primera prueba PCR positiva realizada al paciente. 
+//    Utiliza un pipeline dentro del $lookup con las siguientes operaciones:
+//    - Filtra las pruebas que coinciden con el paciente ("id_paciente") y son de tipo "PCR" con resultado "Positivo".
+//    - Ordena las pruebas por fecha ascendente y limita los resultados a solo la primera prueba.
+// 5. Se utiliza otro $unwind para desestructurar el array de la primera prueba PCR.
+// 6. Finalmente, proyecta los siguientes campos:
+//    - "id_paciente": el identificador del paciente.
+//    - "nombre_paciente": el nombre del paciente.
+//    - "nombre_hospital": el nombre del hospital donde el paciente fue ingresado.
+//    - "fecha_ingreso": la fecha en la que el paciente fue ingresado al hospital.
+//    - "laboratorio_primera_pcr": el nombre del laboratorio que realizó la primera prueba PCR positiva.
+// La consulta devuelve los datos de hospitalización y la primera prueba PCR positiva del paciente sin incluir el campo _id.
+
+[
+    {
+        "$match": {  
+            "estado.severidad": "Moderado"
+        }
+    },
+    {
+        "$lookup": {
+            "from": "Hospitalizaciones",
+            "localField": "id_paciente",
+            "foreignField": "id_paciente",
+            "as": "hospitalizacion_info"
+        }
+    },
+    {
+        "$unwind": "$hospitalizacion_info" 
+    },
+    {
+        "$lookup": {
+            "from": "Pruebas",
+            "let": { "paciente_id": "$id_paciente" },
+            "pipeline": [
+              { "$match": {
+                  "$expr": {
+                     "$and": [
+                        { "$eq": [ "$id_paciente",  "$$paciente_id" ] }, 
+                        { "$eq": [ "$tipo", "PCR" ] },
+                        { "$eq": [ "$resultado", "Positivo" ] }
+                     ]
+                  }
+              }},
+              { "$sort": { "fecha": 1 } }, 
+              { "$limit": 1 } 
+            ],
+            "as": "primera_prueba_pcr"
+        }
+    },
+
+    {
+        "$unwind": "$primera_prueba_pcr" 
+    },
+    {
+        "$project": {
+            "_id": 0,
+            "id_paciente": 1,
+            "nombre_paciente": 1,
+            "nombre_hospital": "$hospitalizacion_info.hospital.nombre",
+            "fecha_ingreso": "$hospitalizacion_info.fecha_ingreso",
+            "laboratorio_primera_pcr": "$primera_prueba_pcr.laboratorio.nombre"
+
+        }
+    }
+]

@@ -1,0 +1,49 @@
+// Coleccion: Casos
+
+// Esta consulta realiza una agregación para obtener información relacionada con pacientes, sus casos y sus vacunaciones.
+// Primero, utiliza un $lookup para unir la colección "Casos" con la colección actual ("Pruebas") a través del campo "id_paciente".
+// Luego, hace un $unwind sobre el array "caso_info" para desestructurarlo y trabajar con los datos de cada caso individualmente.
+// Después, realiza otro $lookup para unir la colección "Vacunaciones" también a través de "id_paciente", obteniendo la información de vacunación.
+// Finalmente, proyecta los siguientes campos:
+// - "id_paciente": el identificador del paciente.
+// - "hospital": información sobre el hospital donde fue ingresado el paciente.
+// - "fecha_ingreso": la fecha de ingreso al hospital.
+// - "severidad_caso": la severidad del estado del paciente extraída de "caso_info".
+// - "vacunas_recibidas": el número de vacunas que ha recibido el paciente, contando los elementos del array "vacunacion_info.vacunacion" (si existe).
+// La consulta devuelve estos campos sin incluir el campo _id.
+
+[
+  {
+    "$lookup": {
+      "from": "Casos",
+      "localField": "id_paciente",
+      "foreignField": "id_paciente",
+      "as": "caso_info"
+    }
+  },
+  {
+    "$unwind": "$caso_info"
+  },
+  {
+    "$lookup": {
+      "from": "Vacunaciones",
+      "localField": "id_paciente",
+      "foreignField": "id_paciente",
+      "as": "vacunacion_info"
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "id_paciente": 1,
+      "hospital": 1,
+      "fecha_ingreso": 1,
+      "severidad_caso": "$caso_info.estado.severidad",
+      "vacunas_recibidas": {
+        "$size": {
+          "$ifNull": [ "$vacunacion_info.vacunacion", [] ] 
+        }
+      }
+    }
+  }
+]
