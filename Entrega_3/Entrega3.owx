@@ -1,0 +1,2835 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mjhr0/covidhosp"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mjhr0/covidhosp">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#casos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hospitalizaciones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pruebas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vacunaciones"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ha_sido_hospitalizado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ha_sido_vacunado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#se_ha_hecho_prueba"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alta_medica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calle_centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calle_laboratorio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#centro_vacunacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ciudad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ciudad_casos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ciudad_centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contacto_proveedor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diagnostico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#direccion_centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#direccion_hospital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#direccion_laboratorio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#direccion_proveedor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dosis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dosis_vacunacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracion_oxigenacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edad_paciente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#estado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#estado_casos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fabricante"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_casos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_diagnostico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_egreso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_ingreso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_prueba"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_vacunacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fin_oxigenacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fin_tratamiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#historial_sintomas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hospital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hospitalizado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_paciente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inicio_oxigenacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inicio_tratamiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#laboratorio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#medicamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_hospital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_paciente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_proveedor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_vacuna"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#observaciones_resultado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oxigenacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pais_casos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#proveedor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provincia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provincia_casos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provincia_centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pruebas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#resultado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#resultado_prueba"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#severidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#severidad_casos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sexo_paciente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sintomas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefono_proveedor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo_oxigenacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo_prueba"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tratamiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ubicacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uci"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vacuna"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vacunacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caso07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hosp001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hosp002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hosp003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hosp004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hosp005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prueba010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacuna001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacuna002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacuna003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacuna004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacuna005"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#casos"/>
+        <NamedIndividual IRI="#Caso07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hospitalizaciones"/>
+        <NamedIndividual IRI="#hosp001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hospitalizaciones"/>
+        <NamedIndividual IRI="#hosp002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hospitalizaciones"/>
+        <NamedIndividual IRI="#hosp003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hospitalizaciones"/>
+        <NamedIndividual IRI="#hosp004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hospitalizaciones"/>
+        <NamedIndividual IRI="#hosp005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pruebas"/>
+        <NamedIndividual IRI="#prueba010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vacunaciones"/>
+        <NamedIndividual IRI="#vacuna001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vacunaciones"/>
+        <NamedIndividual IRI="#vacuna002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vacunaciones"/>
+        <NamedIndividual IRI="#vacuna003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vacunaciones"/>
+        <NamedIndividual IRI="#vacuna004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vacunaciones"/>
+        <NamedIndividual IRI="#vacuna005"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <NamedIndividual IRI="#Caso02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <NamedIndividual IRI="#Caso03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <NamedIndividual IRI="#Caso04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <NamedIndividual IRI="#Caso05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <NamedIndividual IRI="#Caso07"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <NamedIndividual IRI="#Caso01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <NamedIndividual IRI="#Caso01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <NamedIndividual IRI="#Caso02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <NamedIndividual IRI="#Caso02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <NamedIndividual IRI="#Caso03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <NamedIndividual IRI="#Caso04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <NamedIndividual IRI="#Caso04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <NamedIndividual IRI="#Caso05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <NamedIndividual IRI="#Caso05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <NamedIndividual IRI="#Caso05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <NamedIndividual IRI="#Caso01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <NamedIndividual IRI="#Caso02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <NamedIndividual IRI="#Caso03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <NamedIndividual IRI="#Caso04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <NamedIndividual IRI="#Caso05"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>Confirmado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>2023-01-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>2023-01-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>PAC-1001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>Juan Pérez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad_casos"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>Leve</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal>fiebre, tos seca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>Confirmado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>2023-09-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>2023-09-24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>2023-09-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>PAC-1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>Ana Gómez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad_casos"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>Critico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>dificultad respiratoria, fiebre alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal>tos persistente, fatiga extrema</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>Confirmado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>2023-11-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>2023-11-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>PAC-1003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>Carlos Sánchez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad_casos"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>Moderado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal>dolor de cabeza, congestión</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>Confirmado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>2023-11-12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>2023-11-12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>PAC-1004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>Laura Martínez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad_casos"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>Leve</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal>tos leve, dolor de garganta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>Confirmado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>2023-10-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>2023-10-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>PAC-1005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>Miguel Ángel Torres</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad_casos"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>Critico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal>fiebre, cansancio, pérdida de gusto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>Bilbao</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>Negativo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>2023-10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>2023-10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>PAC-1006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>María López</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>Bilbao</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal>dolor de garganta, congestión nasal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_casos"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#diagnostico"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>Confirmado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad_paciente"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_casos"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>2023-09-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>2023-09-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hospitalizado"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>PAC-1007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_paciente"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>Sofía Ramírez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pais_casos"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_casos"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad_casos"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>Critico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sexo_paciente"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sintomas"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal>dificultad para respirar, dolor torácico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#uci"/>
+        <NamedIndividual IRI="#Caso07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alta_medica"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_hospital"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>Paseo Vall d&apos;Hebron, Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>Calle Industria, Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>6 mg oral diario</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>10 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion_oxigenacion"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>7 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>2023-09-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_oxigenacion"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>2023-09-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>2023-10-02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>PAC-1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_oxigenacion"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>2023-09-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>2023-09-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#medicamento"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>Dexametasona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_hospital"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>Hospital Vall d&apos;Hebron</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>MediBarcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#observaciones_resultado"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>No mejora</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>Crítico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>+34 934 567 890</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_oxigenacion"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>Intubación</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#unidad"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal>UCI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <NamedIndividual IRI="#hosp001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_hospital"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>Av. Fernando Abril Martorell, Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>Plaza de la Salud, Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>6 mg oral diario</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>10 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>2023-11-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>PAC-1003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>2023-11-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#medicamento"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>Dexametasona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_hospital"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>Hospital La Fe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>PharmaValencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>Moderado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>+34 963 123 456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#unidad"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal>Planta COVID-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <NamedIndividual IRI="#hosp002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_hospital"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>Av. Manuel Siurot, Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>Calle Salud, Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>2 L/min</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>7 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_egreso"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>2023-10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>2023-10-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>2023-10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>PAC-1004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>2023-10-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#medicamento"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>Oxígeno suplementario</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_hospital"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>Hospital Virgen del Rocío</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>SevillaMedical</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>Moderado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>+34 954 123 456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#unidad"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal>Planta de Neumología</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <NamedIndividual IRI="#hosp003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alta_medica"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_hospital"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>Paseo Isabel la Católica, Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>Av. del Medicamento, Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>200 mg intravenosa diaria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>5 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>2023-10-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>2023-10-24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>PAC-1005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>2023-10-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#medicamento"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>Remdesivir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_hospital"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>Hospital Miguel Servet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>PharmaZaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#observaciones_resultado"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>No mejora</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>Crítico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>+34 976 123 456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#unidad"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal>UCI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <NamedIndividual IRI="#hosp004"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alta_medica"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_hospital"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>Av. Tres Cruces, Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>Plaza de la Salud, Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>200 mg intravenosa diaria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>7 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracion_oxigenacion"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>10 días</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>2023-09-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_oxigenacion"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>2023-09-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>2023-09-26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>PAC-1007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_oxigenacion"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>2023-09-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>2023-09-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#medicamento"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>Remdesivir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_hospital"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>Hospital General de Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>PharmaValencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#observaciones_resultado"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>No mejora</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#severidad"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>Crítico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>+34 963 123 456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_oxigenacion"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>Intubación</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#unidad"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal>UCI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <NamedIndividual IRI="#hosp005"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>Avenida de la Ciencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>2023-10-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>PAC-1001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>Lab Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba001"/>
+        <Literal>PCR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>Avenida de la Ciencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>2023-10-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>PAC-1001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>Lab Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>Negativo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba002"/>
+        <Literal>Antígenos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>Calle Aragón</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>2023-09-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>PAC-1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>Laboratorio Central Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba003"/>
+        <Literal>PCR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>Calle Aragón</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>2023-09-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>PAC-1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>Laboratorio Central Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba004"/>
+        <Literal>Antígenos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>Av. de las Ciencias</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>2023-11-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>PAC-1003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>Lab Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba005"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>Calle Real</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>2023-10-12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>PAC-1004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>Lab Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba006"/>
+        <Literal>Antígenos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>Calle Real</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>2023-10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>PAC-1004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>Lab Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>Negativo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba007"/>
+        <Literal>Antígenos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>Paseo Independencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>2023-10-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>PAC-1005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>Lab Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba008"/>
+        <Literal>PCR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>Paseo Independencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>2023-10-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>PAC-1005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>Lab Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>Positivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba009"/>
+        <Literal>Antígenos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>Paseo Independencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_prueba"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>2023-10-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_paciente"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>PAC-1005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>Lab Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#resultado_prueba"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>Negativo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_prueba"/>
+        <NamedIndividual IRI="#prueba010"/>
+        <Literal>PCR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_centro"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>Calle Mayor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_centro"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fabricante"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>Pfizer Inc.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>2021-01-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lote"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>PF-12345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_centro"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>Centro de Salud Madrid Norte</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>Pfizer-BioNTech</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_centro"/>
+        <NamedIndividual IRI="#vacuna001"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_centro"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>Calle Aragón</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_centro"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fabricante"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>Moderna, Inc.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>2021-04-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lote"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>MOD-7891</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_centro"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>Hospital Clínico de Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>Moderna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_centro"/>
+        <NamedIndividual IRI="#vacuna002"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_centro"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>Av.de las Ciencias</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_centro"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fabricante"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>AstraZeneca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>2021-02-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lote"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>AZ-34567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_centro"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>Centro de Salud Valencia Este</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>AstraZeneca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_centro"/>
+        <NamedIndividual IRI="#vacuna003"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_centro"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>Calle Real</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_centro"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fabricante"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>Johnson &amp; Johnson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>2021-03-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lote"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>JNJ-56789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_centro"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>Centro de Salud Sevilla Oeste</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>Johnson &amp; Johnson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_centro"/>
+        <NamedIndividual IRI="#vacuna004"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calle_centro"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>Paseo Isabel la Católica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ciudad_centro"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fabricante"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>Pfizer Inc.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>2021-02-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lote"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>PF-22346</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_centro"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>Hospital Miguel Servet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>Pfizer-BioNTech</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#provincia_centro"/>
+        <NamedIndividual IRI="#vacuna005"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <ObjectProperty IRI="#ha_sido_hospitalizado"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <ObjectProperty IRI="#se_ha_hecho_prueba"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <ObjectProperty IRI="#ha_sido_vacunado"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <Class IRI="#hospitalizaciones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <Class IRI="#pruebas"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <Class IRI="#vacunaciones"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ha_sido_hospitalizado"/>
+        <Class IRI="#casos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ha_sido_vacunado"/>
+        <Class IRI="#casos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#se_ha_hecho_prueba"/>
+        <Class IRI="#casos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#es_hospitalizacion_de"/>
+        <Class IRI="#casos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#es_una_prueba_de"/>
+        <Class IRI="#casos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#es_vacuna_de"/>
+        <Class IRI="#casos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ha_sido_hospitalizado"/>
+        <Class IRI="#hospitalizaciones"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ha_sido_vacunado"/>
+        <Class IRI="#vacunaciones"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#se_ha_hecho_prueba"/>
+        <Class IRI="#pruebas"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#alta_medica"/>
+        <DataProperty IRI="#resultado"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#calle_centro"/>
+        <DataProperty IRI="#direccion_centro"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <DataProperty IRI="#direccion_laboratorio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#centro_vacunacion"/>
+        <DataProperty IRI="#vacunacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ciudad"/>
+        <DataProperty IRI="#direccion_laboratorio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ciudad_casos"/>
+        <DataProperty IRI="#ubicacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ciudad_centro"/>
+        <DataProperty IRI="#direccion_centro"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#contacto_proveedor"/>
+        <DataProperty IRI="#proveedor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#diagnostico"/>
+        <DataProperty IRI="#estado_casos"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#direccion_centro"/>
+        <DataProperty IRI="#centro_vacunacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#direccion_hospital"/>
+        <DataProperty IRI="#hospital"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#direccion_laboratorio"/>
+        <DataProperty IRI="#laboratorio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <DataProperty IRI="#contacto_proveedor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dosis"/>
+        <DataProperty IRI="#tratamiento"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <DataProperty IRI="#vacunacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duracion"/>
+        <DataProperty IRI="#tratamiento"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duracion_oxigenacion"/>
+        <DataProperty IRI="#oxigenacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fabricante"/>
+        <DataProperty IRI="#vacuna"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fecha_casos"/>
+        <DataProperty IRI="#historial_sintomas"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <DataProperty IRI="#vacunacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fin_oxigenacion"/>
+        <DataProperty IRI="#oxigenacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <DataProperty IRI="#tratamiento"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#historial_sintomas"/>
+        <DataProperty IRI="#estado_casos"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hospitalizado"/>
+        <DataProperty IRI="#estado_casos"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#inicio_oxigenacion"/>
+        <DataProperty IRI="#oxigenacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <DataProperty IRI="#tratamiento"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lote"/>
+        <DataProperty IRI="#vacuna"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#medicamento"/>
+        <DataProperty IRI="#tratamiento"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre"/>
+        <DataProperty IRI="#laboratorio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre_centro"/>
+        <DataProperty IRI="#centro_vacunacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre_hospital"/>
+        <DataProperty IRI="#hospital"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <DataProperty IRI="#proveedor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <DataProperty IRI="#vacuna"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#observaciones_resultado"/>
+        <DataProperty IRI="#resultado"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#oxigenacion"/>
+        <DataProperty IRI="#estado"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pais_casos"/>
+        <DataProperty IRI="#ubicacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#proveedor"/>
+        <DataProperty IRI="#tratamiento"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#provincia"/>
+        <DataProperty IRI="#direccion_laboratorio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#provincia_casos"/>
+        <DataProperty IRI="#ubicacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#provincia_centro"/>
+        <DataProperty IRI="#direccion_centro"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#severidad"/>
+        <DataProperty IRI="#estado"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#severidad_casos"/>
+        <DataProperty IRI="#estado_casos"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sintomas"/>
+        <DataProperty IRI="#historial_sintomas"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <DataProperty IRI="#contacto_proveedor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tipo_oxigenacion"/>
+        <DataProperty IRI="#oxigenacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#uci"/>
+        <DataProperty IRI="#estado_casos"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#unidad"/>
+        <DataProperty IRI="#hospital"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#vacuna"/>
+        <DataProperty IRI="#vacunacion"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <DataProperty IRI="#estado"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#alta_medica"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calle_centro"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#centro_vacunacion"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ciudad"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ciudad_casos"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ciudad_centro"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#diagnostico"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#direccion_centro"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#direccion_hospital"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dosis"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracion"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracion_oxigenacion"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edad_paciente"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estado"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estado_casos"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fabricante"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_casos"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_egreso"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_prueba"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fin_oxigenacion"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#historial_sintomas"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hospital"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hospitalizado"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_paciente"/>
+        <ObjectUnionOf>
+            <Class IRI="#casos"/>
+            <Class IRI="#hospitalizaciones"/>
+            <Class IRI="#pruebas"/>
+            <Class IRI="#vacunaciones"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inicio_oxigenacion"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#laboratorio"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lote"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#medicamento"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_centro"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_hospital"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_paciente"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#observaciones_resultado"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oxigenacion"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pais_casos"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia_casos"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia_centro"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pruebas"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#resultado"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#resultado_prueba"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#severidad"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#severidad_casos"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sexo_paciente"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sintomas"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo_oxigenacion"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo_prueba"/>
+        <Class IRI="#pruebas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tratamiento"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uci"/>
+        <Class IRI="#casos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#unidad"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#vacuna"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#vacunacion"/>
+        <Class IRI="#vacunaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <Class IRI="#hospitalizaciones"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#alta_medica"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#calle_centro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#calle_laboratorio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ciudad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ciudad_casos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ciudad_centro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#diagnostico"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#direccion_hospital"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#direccion_proveedor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dosis"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dosis_vacunacion"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracion_oxigenacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#edad_paciente"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fabricante"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_casos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_diagnostico"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_egreso"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_ingreso"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_prueba"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_vacunacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fin_oxigenacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fin_tratamiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#historial_sintomas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hospitalizado"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_paciente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inicio_oxigenacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inicio_tratamiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lote"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#medicamento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_centro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_hospital"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_paciente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_proveedor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_vacuna"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#observaciones_resultado"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pais_casos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provincia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provincia_casos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provincia_centro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pruebas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#resultado_prueba"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#severidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#severidad_casos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sexo_paciente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sintomas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefono_proveedor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo_oxigenacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo_prueba"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uci"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#unidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ventilacion_mecanica"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
