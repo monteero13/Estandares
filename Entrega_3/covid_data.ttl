@@ -1,0 +1,1432 @@
+@prefix covid: <http://www.semanticweb.org/grupo5/covid-ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/ventilacion_mecanica> ;
+    covid:fecha_egreso "None" ;
+    covid:fecha_ingreso "2023-09-22" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/unidad> ;
+    covid:id_paciente "PAC-1002" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/ventilacion_mecanica> ;
+    covid:fecha_egreso "None" ;
+    covid:fecha_ingreso "2023-11-06" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/unidad> ;
+    covid:id_paciente "PAC-1003" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/ventilacion_mecanica> ;
+    covid:fecha_egreso "2023-10-22" ;
+    covid:fecha_ingreso "2023-10-15" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/unidad> ;
+    covid:id_paciente "PAC-1004" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/ventilacion_mecanica> ;
+    covid:fecha_egreso "None" ;
+    covid:fecha_ingreso "2023-10-18" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/unidad> ;
+    covid:id_paciente "PAC-1005" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/ventilacion_mecanica> ;
+    covid:fecha_egreso "None" ;
+    covid:fecha_ingreso "2023-09-18" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/unidad> ;
+    covid:id_paciente "PAC-1007" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/ventilacion_mecanica> ;
+    covid:fecha_egreso "2023-11-4" ;
+    covid:fecha_ingreso "2023-10-30" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/unidad> ;
+    covid:id_paciente "PAC-1008" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/ventilacion_mecanica> ;
+    covid:fecha_egreso "2023-10-10" ;
+    covid:fecha_ingreso "2023-09-27" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/unidad> ;
+    covid:id_paciente "PAC-1009" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08> a covid:Hospitalizacion ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/ventilacion_mecanica> ;
+    covid:fecha_egreso "None" ;
+    covid:fecha_ingreso "2023-11-08" ;
+    covid:hospital <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/nombre>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/unidad> ;
+    covid:id_paciente "PAC-1010" ;
+    covid:resultado <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/alta_medica>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/observaciones> ;
+    covid:tratamiento <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001> a covid:Paciente ;
+    covid:edad 55 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/uci> ;
+    covid:fecha_diagnostico "2023-10-01" ;
+    covid:id_paciente "PAC-1001" ;
+    covid:nombre "Juan Pérez" ;
+    covid:sexo "M" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002> a covid:Paciente ;
+    covid:edad 45 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/uci> ;
+    covid:fecha_diagnostico "2023-09-21" ;
+    covid:id_paciente "PAC-1002" ;
+    covid:nombre "Ana Gómez" ;
+    covid:sexo "F" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003> a covid:Paciente ;
+    covid:edad 60 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/uci> ;
+    covid:fecha_diagnostico "2023-11-05" ;
+    covid:id_paciente "PAC-1003" ;
+    covid:nombre "Carlos Sánchez" ;
+    covid:sexo "M" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004> a covid:Paciente ;
+    covid:edad 33 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/uci> ;
+    covid:fecha_diagnostico "2023-11-12" ;
+    covid:id_paciente "PAC-1004" ;
+    covid:nombre "Laura Martínez" ;
+    covid:sexo "F" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005> a covid:Paciente ;
+    covid:edad 47 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/uci> ;
+    covid:fecha_diagnostico "2023-10-15" ;
+    covid:id_paciente "PAC-1005" ;
+    covid:nombre "Miguel Ángel Torres" ;
+    covid:sexo "M" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006> a covid:Paciente ;
+    covid:edad 29 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/uci> ;
+    covid:fecha_diagnostico "2023-10-22" ;
+    covid:id_paciente "PAC-1006" ;
+    covid:nombre "María López" ;
+    covid:sexo "F" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007> a covid:Paciente ;
+    covid:edad 50 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/uci> ;
+    covid:fecha_diagnostico "2023-09-18" ;
+    covid:id_paciente "PAC-1007" ;
+    covid:nombre "Sofía Ramírez" ;
+    covid:sexo "F" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008> a covid:Paciente ;
+    covid:edad 42 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/uci> ;
+    covid:fecha_diagnostico "2023-10-30" ;
+    covid:id_paciente "PAC-1008" ;
+    covid:nombre "Pedro Gutiérrez" ;
+    covid:sexo "M" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009> a covid:Paciente ;
+    covid:edad 37 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/uci> ;
+    covid:fecha_diagnostico "2023-09-27" ;
+    covid:id_paciente "PAC-1009" ;
+    covid:nombre "Lucía Fernández" ;
+    covid:sexo "F" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010> a covid:Paciente ;
+    covid:edad 61 ;
+    covid:estado <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/diagnostico>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/historial_sintomas>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/hospitalizado>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/severidad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/uci> ;
+    covid:fecha_diagnostico "2023-11-08" ;
+    covid:id_paciente "PAC-1010" ;
+    covid:nombre "Javier Delgado" ;
+    covid:sexo "M" ;
+    covid:ubicacion <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/pais>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001> a covid:Prueba ;
+    covid:fecha "2023-10-01" ;
+    covid:id_paciente "PAC-1001" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002> a covid:Prueba ;
+    covid:fecha "2023-10-10" ;
+    covid:id_paciente "PAC-1001" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/nombre> ;
+    covid:resultado "Negativo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003> a covid:Prueba ;
+    covid:fecha "2023-09-21" ;
+    covid:id_paciente "PAC-1002" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004> a covid:Prueba ;
+    covid:fecha "2023-09-30" ;
+    covid:id_paciente "PAC-1002" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005> a covid:Prueba ;
+    covid:fecha "2023-11-05" ;
+    covid:id_paciente "PAC-1003" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006> a covid:Prueba ;
+    covid:fecha "2023-10-12" ;
+    covid:id_paciente "PAC-1004" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007> a covid:Prueba ;
+    covid:fecha "2023-10-22" ;
+    covid:id_paciente "PAC-1004" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/nombre> ;
+    covid:resultado "Negativo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008> a covid:Prueba ;
+    covid:fecha "2023-10-15" ;
+    covid:id_paciente "PAC-1005" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009> a covid:Prueba ;
+    covid:fecha "2023-10-18" ;
+    covid:id_paciente "PAC-1005" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010> a covid:Prueba ;
+    covid:fecha "2023-10-25" ;
+    covid:id_paciente "PAC-1005" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/nombre> ;
+    covid:resultado "Negativo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011> a covid:Prueba ;
+    covid:fecha "2023-10-22" ;
+    covid:id_paciente "PAC-1006" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/nombre> ;
+    covid:resultado "Negativo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012> a covid:Prueba ;
+    covid:fecha "2023-09-18" ;
+    covid:id_paciente "PAC-1007" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013> a covid:Prueba ;
+    covid:fecha "2023-10-01" ;
+    covid:id_paciente "PAC-1007" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "Anticuerpos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014> a covid:Prueba ;
+    covid:fecha "2023-10-30" ;
+    covid:id_paciente "PAC-1008" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015> a covid:Prueba ;
+    covid:fecha "2023-11-02" ;
+    covid:id_paciente "PAC-1008" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/nombre> ;
+    covid:resultado "Negativo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016> a covid:Prueba ;
+    covid:fecha "2023-09-27" ;
+    covid:id_paciente "PAC-1009" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017> a covid:Prueba ;
+    covid:fecha "2023-10-15" ;
+    covid:id_paciente "PAC-1009" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "Anticuerpos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018> a covid:Prueba ;
+    covid:fecha "2023-11-08" ;
+    covid:id_paciente "PAC-1010" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "PCR" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019> a covid:Prueba ;
+    covid:fecha "2023-11-10" ;
+    covid:id_paciente "PAC-1010" ;
+    covid:laboratorio <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/nombre> ;
+    covid:resultado "Positivo" ;
+    covid:tipo "Antígenos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1001" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1002" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1003" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1004" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1005" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1006" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1007" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1008" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1009" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010> a covid:Vacunacion ;
+    covid:id_paciente "PAC-1010" ;
+    covid:vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/alta_medica> covid:alta_medica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/direccion> covid:direccion "Paseo Vall d'Hebron, Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento> covid:dosis "6 mg oral diario" ;
+    covid:duracion "10 días" ;
+    covid:fin "2023-10-02" ;
+    covid:inicio "2023-09-22" ;
+    covid:medicamento "Dexametasona" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/contacto/direccion> covid:direccion "Calle Industria, Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/contacto/telefono> covid:telefono "+34 934 567 890" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/medicamento/nombre> covid:nombre "MediBarcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/nombre> covid:nombre "Hospital Vall d'Hebron" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/observaciones> covid:observaciones "No mejora" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion> covid:oxigenacion <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/duracion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/fin>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/inicio>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/tipo> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/duracion> covid:duracion "7 días" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/fin> covid:fin "2023-09-30" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/inicio> covid:inicio "2023-09-23" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/oxigenacion/tipo> covid:tipo "Intubación" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/severidad> covid:severidad "Crítico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/unidad> covid:unidad "UCI" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp001/ventilacion_mecanica> covid:ventilacion_mecanica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/alta_medica> covid:alta_medica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/direccion> covid:direccion "Av. Fernando Abril Martorell, Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento> covid:dosis "6 mg oral diario" ;
+    covid:duracion "10 días" ;
+    covid:fin "None" ;
+    covid:inicio "2023-11-06" ;
+    covid:medicamento "Dexametasona" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/contacto/direccion> covid:direccion "Plaza de la Salud, Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/contacto/telefono> covid:telefono "+34 963 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/medicamento/nombre> covid:nombre "PharmaValencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/nombre> covid:nombre "Hospital La Fe" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/observaciones> covid:observaciones "Paciente en tratamiento activo" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/severidad> covid:severidad "Moderado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/unidad> covid:unidad "Planta COVID-19" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp002/ventilacion_mecanica> covid:ventilacion_mecanica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/alta_medica> covid:alta_medica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/direccion> covid:direccion "Av. Manuel Siurot, Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento> covid:dosis "2 L/min" ;
+    covid:duracion "7 días" ;
+    covid:fin "2023-10-22" ;
+    covid:inicio "2023-10-15" ;
+    covid:medicamento "Oxígeno suplementario" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/contacto/direccion> covid:direccion "Calle Salud, Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/contacto/telefono> covid:telefono "+34 954 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/medicamento/nombre> covid:nombre "SevillaMedical" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/nombre> covid:nombre "Hospital Virgen del Rocío" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/observaciones> covid:observaciones "Alta sin complicaciones" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/severidad> covid:severidad "Moderado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/unidad> covid:unidad "Planta de Neumología" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp003/ventilacion_mecanica> covid:ventilacion_mecanica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/alta_medica> covid:alta_medica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/direccion> covid:direccion "Paseo Isabel la Católica, Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento> covid:dosis "200 mg intravenosa diaria" ;
+    covid:duracion "5 días" ;
+    covid:fin "2023-10-24" ;
+    covid:inicio "2023-10-19" ;
+    covid:medicamento "Remdesivir" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/contacto/direccion> covid:direccion "Av. del Medicamento, Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/contacto/telefono> covid:telefono "+34 976 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/medicamento/nombre> covid:nombre "PharmaZaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/nombre> covid:nombre "Hospital Miguel Servet" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/observaciones> covid:observaciones "No mejora" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/severidad> covid:severidad "Crítico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/unidad> covid:unidad "UCI" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp004/ventilacion_mecanica> covid:ventilacion_mecanica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/alta_medica> covid:alta_medica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/direccion> covid:direccion "Av. Tres Cruces, Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento> covid:dosis "200 mg intravenosa diaria" ;
+    covid:duracion "7 días" ;
+    covid:fin "2023-09-26" ;
+    covid:inicio "2023-09-19" ;
+    covid:medicamento "Remdesivir" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/contacto/direccion> covid:direccion "Plaza de la Salud, Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/contacto/telefono> covid:telefono "+34 963 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/medicamento/nombre> covid:nombre "PharmaValencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/nombre> covid:nombre "Hospital General de Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/observaciones> covid:observaciones "No mejora" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion> covid:oxigenacion <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/duracion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/fin>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/inicio>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/tipo> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/duracion> covid:duracion "10 días" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/fin> covid:fin "2023-09-28" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/inicio> covid:inicio "2023-09-18" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/oxigenacion/tipo> covid:tipo "Intubación" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/severidad> covid:severidad "Crítico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/unidad> covid:unidad "UCI" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp005/ventilacion_mecanica> covid:ventilacion_mecanica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/alta_medica> covid:alta_medica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/direccion> covid:direccion "Av. Carlos Haya, Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento> covid:dosis "3 L/min" ;
+    covid:duracion "Indeterminado" ;
+    covid:fin "None" ;
+    covid:inicio "2023-10-30" ;
+    covid:medicamento "Oxígeno suplementario" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/contacto/direccion> covid:direccion "Plaza Andalucía, Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/contacto/telefono> covid:telefono "+34 952 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/medicamento/nombre> covid:nombre "AndalucíaMedic" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/nombre> covid:nombre "Hospital Regional de Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/observaciones> covid:observaciones "Mejoría con el nuevo tratamiento" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/severidad> covid:severidad "Moderado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/unidad> covid:unidad "Planta COVID-19" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp006/ventilacion_mecanica> covid:ventilacion_mecanica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/alta_medica> covid:alta_medica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/direccion> covid:direccion "Paseo de la Castellana, Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento> covid:dosis "6 mg oral diario" ;
+    covid:duracion "10 días" ;
+    covid:fin "2023-10-07" ;
+    covid:inicio "2023-09-27" ;
+    covid:medicamento "Dexametasona" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/contacto/direccion> covid:direccion "Av. de la Innovación, Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/contacto/telefono> covid:telefono "+34 600 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/medicamento/nombre> covid:nombre "PharmaMadrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/nombre> covid:nombre "Hospital La Paz" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/observaciones> covid:observaciones "Recuperación después de tratamiento" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/severidad> covid:severidad "Leve" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/unidad> covid:unidad "Planta COVID-19" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp007/ventilacion_mecanica> covid:ventilacion_mecanica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/alta_medica> covid:alta_medica false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/direccion> covid:direccion "Ctra. Madrid-Cartagena, Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento> covid:dosis "200 mg intravenosa diaria" ;
+    covid:duracion "3 días" ;
+    covid:fin "None" ;
+    covid:inicio "2023-11-09" ;
+    covid:medicamento "Remdesivir" ;
+    covid:proveedor <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/contacto>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/contacto> covid:contacto <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/contacto/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/contacto/telefono> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/contacto/direccion> covid:direccion "Calle Principal, Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/contacto/telefono> covid:telefono "+34 968 123 456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/medicamento/nombre> covid:nombre "PharmaMurcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/nombre> covid:nombre "Hospital Virgen de la Arrixaca" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/observaciones> covid:observaciones "Paciente en tratamiento activo" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/severidad> covid:severidad "Grave" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/unidad> covid:unidad "UCI" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#hospitalizacion/hosp08/ventilacion_mecanica> covid:ventilacion_mecanica true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/historial_sintomas/fecha> covid:fecha "2023-10-01" ;
+    covid:sintomas "fiebre",
+        "tos seca" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/hospitalizado> covid:hospitalizado false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/severidad> covid:severidad "Leve" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1001/uci> covid:uci false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/ciudad> covid:ciudad "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/historial_sintomas/fecha> covid:fecha "2023-09-23",
+        "2023-09-24" ;
+    covid:sintomas "dificultad respiratoria",
+        "fatiga extrema",
+        "fiebre alta",
+        "tos persistente" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/provincia> covid:provincia "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/severidad> covid:severidad "Critico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1002/uci> covid:uci true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/historial_sintomas/fecha> covid:fecha "2023-11-06" ;
+    covid:sintomas "congestión",
+        "dolor de cabeza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/severidad> covid:severidad "Moderado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1003/uci> covid:uci false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/ciudad> covid:ciudad "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/historial_sintomas/fecha> covid:fecha "2023-11-12" ;
+    covid:sintomas "dolor de garganta",
+        "tos leve" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/provincia> covid:provincia "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/severidad> covid:severidad "Leve" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1004/uci> covid:uci false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/ciudad> covid:ciudad "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/historial_sintomas/fecha> covid:fecha "2023-10-15" ;
+    covid:sintomas "cansancio",
+        "fiebre",
+        "pérdida de gusto" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/provincia> covid:provincia "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/severidad> covid:severidad "Critico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1005/uci> covid:uci true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/ciudad> covid:ciudad "Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/diagnostico> covid:diagnostico "Negativo" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/historial_sintomas/fecha> covid:fecha "2023-10-22" ;
+    covid:sintomas "congestión nasal",
+        "dolor de garganta" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/hospitalizado> covid:hospitalizado false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/provincia> covid:provincia "Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/severidad> covid:severidad "None" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1006/uci> covid:uci false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/historial_sintomas/fecha> covid:fecha "2023-09-18" ;
+    covid:sintomas "dificultad para respirar",
+        "dolor torácico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/severidad> covid:severidad "Critico" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1007/uci> covid:uci true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/ciudad> covid:ciudad "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/historial_sintomas/fecha> covid:fecha "2023-10-30" ;
+    covid:sintomas "dolor muscular",
+        "fiebre",
+        "tos" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/provincia> covid:provincia "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/severidad> covid:severidad "Moderado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1008/uci> covid:uci false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/historial_sintomas/fecha> covid:fecha "2023-09-27" ;
+    covid:sintomas "dolor de cabeza",
+        "tos leve" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/severidad> covid:severidad "Leve" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1009/uci> covid:uci false .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/ciudad> covid:ciudad "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/diagnostico> covid:diagnostico "Confirmado" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/historial_sintomas> covid:historial_sintomas <http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/historial_sintomas/fecha> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/historial_sintomas/fecha> covid:fecha "2023-11-08" ;
+    covid:sintomas "dificultad respiratoria grave",
+        "dolor muscular" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/hospitalizado> covid:hospitalizado true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/pais> covid:pais "España" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/provincia> covid:provincia "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/severidad> covid:severidad "Grave" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#paciente/PAC-1010/uci> covid:uci true .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion/calle> covid:calle "Avenida de la Ciencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/direccion/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba001/nombre> covid:nombre "Lab Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion/calle> covid:calle "Avenida de la Ciencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/direccion/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba002/nombre> covid:nombre "Lab Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion/calle> covid:calle "Calle Aragón" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion/ciudad> covid:ciudad "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/direccion/provincia> covid:provincia "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba003/nombre> covid:nombre "Laboratorio Central Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion/calle> covid:calle "Calle Aragón" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion/ciudad> covid:ciudad "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/direccion/provincia> covid:provincia "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba004/nombre> covid:nombre "Laboratorio Central Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion/calle> covid:calle "Av. de las Ciencias" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/direccion/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba005/nombre> covid:nombre "Lab Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion/calle> covid:calle "Calle Real" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion/ciudad> covid:ciudad "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/direccion/provincia> covid:provincia "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba006/nombre> covid:nombre "Lab Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion/calle> covid:calle "Calle Real" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion/ciudad> covid:ciudad "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/direccion/provincia> covid:provincia "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba007/nombre> covid:nombre "Lab Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion/calle> covid:calle "Paseo Independencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion/ciudad> covid:ciudad "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/direccion/provincia> covid:provincia "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba008/nombre> covid:nombre "Lab Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion/calle> covid:calle "Paseo Independencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion/ciudad> covid:ciudad "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/direccion/provincia> covid:provincia "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba009/nombre> covid:nombre "Lab Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion/calle> covid:calle "Paseo Independencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion/ciudad> covid:ciudad "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/direccion/provincia> covid:provincia "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba010/nombre> covid:nombre "Lab Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion/calle> covid:calle "Plaza de Cruces" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion/ciudad> covid:ciudad "Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/direccion/provincia> covid:provincia "Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba011/nombre> covid:nombre "Lab Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion/calle> covid:calle "Av. de la Paz" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/direccion/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba012/nombre> covid:nombre "Lab General Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion/calle> covid:calle "Av. de la Paz" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/direccion/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba013/nombre> covid:nombre "Lab General Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion/calle> covid:calle "Calle Larios" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion/ciudad> covid:ciudad "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/direccion/provincia> covid:provincia "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba014/nombre> covid:nombre "Lab Málaga Centro" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion/calle> covid:calle "Calle Larios" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion/ciudad> covid:ciudad "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/direccion/provincia> covid:provincia "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba015/nombre> covid:nombre "Lab Málaga Centro" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion/calle> covid:calle "Calle Alcalá" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/direccion/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba016/nombre> covid:nombre "Lab Madrid Sur" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion/calle> covid:calle "Calle Alcalá" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/direccion/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba017/nombre> covid:nombre "Lab Madrid Sur" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion/calle> covid:calle "Calle Mayor" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion/ciudad> covid:ciudad "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/direccion/provincia> covid:provincia "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba018/nombre> covid:nombre "Lab Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion/calle> covid:calle "Calle Mayor" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion/ciudad> covid:ciudad "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/direccion/provincia> covid:provincia "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#prueba/prueba019/nombre> covid:nombre "Lab Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-01-20",
+        "2021-02-20" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion/calle> covid:calle "Calle Mayor" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/direccion/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/fabricante> covid:fabricante "Pfizer Inc." .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/lote> covid:lote "PF-12345",
+        "PF-12346" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-03-15",
+        "2021-04-15" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion/calle> covid:calle "Calle Aragón" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion/ciudad> covid:ciudad "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/direccion/provincia> covid:provincia "Barcelona" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/fabricante> covid:fabricante "Moderna, Inc." .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/lote> covid:lote "MOD-7890",
+        "MOD-7891" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-02-10",
+        "2021-05-10" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion/calle> covid:calle "Av. de las Ciencias" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/direccion/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/fabricante> covid:fabricante "AstraZeneca" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/lote> covid:lote "AZ-34567",
+        "AZ-34568" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/nombre> ;
+    covid:dosis 1 ;
+    covid:fecha "2021-03-20" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion/calle> covid:calle "Calle Real" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion/ciudad> covid:ciudad "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/direccion/provincia> covid:provincia "Sevilla" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/fabricante> covid:fabricante "Johnson & Johnson" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/lote> covid:lote "JNJ-56789" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-01-22",
+        "2021-02-22" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion/calle> covid:calle "Paseo Isabel la Católica" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion/ciudad> covid:ciudad "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/direccion/provincia> covid:provincia "Zaragoza" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/fabricante> covid:fabricante "Pfizer Inc." .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/lote> covid:lote "PF-22345",
+        "PF-22346" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-04-01",
+        "2021-05-01" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion/calle> covid:calle "Plaza de Cruces" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion/ciudad> covid:ciudad "Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/direccion/provincia> covid:provincia "Bilbao" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/fabricante> covid:fabricante "Moderna, Inc." .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/lote> covid:lote "MOD-8890",
+        "MOD-8891" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-02-25",
+        "2021-05-25" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion/calle> covid:calle "Calle de la Paz" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion/ciudad> covid:ciudad "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/direccion/provincia> covid:provincia "Valencia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/fabricante> covid:fabricante "AstraZeneca" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/lote> covid:lote "AZ-67890",
+        "AZ-67891" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-03-10",
+        "2021-04-10" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion/calle> covid:calle "Calle Larios" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion/ciudad> covid:ciudad "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/direccion/provincia> covid:provincia "Málaga" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/fabricante> covid:fabricante "Pfizer Inc." .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/lote> covid:lote "PF-33455",
+        "PF-33456" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/nombre> ;
+    covid:dosis 1,
+        2 ;
+    covid:fecha "2021-03-12",
+        "2021-04-12" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion/calle> covid:calle "Paseo de la Castellana" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion/ciudad> covid:ciudad "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/direccion/provincia> covid:provincia "Madrid" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/fabricante> covid:fabricante "Moderna, Inc." .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/lote> covid:lote "MOD-3450",
+        "MOD-3451" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis> covid:centro_vacunacion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/nombre> ;
+    covid:dosis 1 ;
+    covid:fecha "2021-02-28" ;
+    covid:vacuna <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/fabricante>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/lote>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/nombre> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion> covid:direccion <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion/calle>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion/ciudad>,
+        <http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion/provincia> .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion/calle> covid:calle "Calle Nueva" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion/ciudad> covid:ciudad "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/direccion/provincia> covid:provincia "Murcia" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/fabricante> covid:fabricante "Johnson & Johnson" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/lote> covid:lote "JNJ-8976" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna001/dosis/nombre> covid:nombre "Centro de Salud Madrid Norte",
+        "Pfizer-BioNTech" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna002/dosis/nombre> covid:nombre "Hospital Clínico de Barcelona",
+        "Moderna" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna003/dosis/nombre> covid:nombre "AstraZeneca",
+        "Centro de Salud Valencia Este" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna004/dosis/nombre> covid:nombre "Centro de Salud Sevilla Oeste",
+        "Johnson & Johnson" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna005/dosis/nombre> covid:nombre "Hospital Miguel Servet",
+        "Pfizer-BioNTech" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna006/dosis/nombre> covid:nombre "Hospital Universitario Cruces",
+        "Moderna" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna007/dosis/nombre> covid:nombre "AstraZeneca",
+        "Centro de Salud Valencia Norte" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna008/dosis/nombre> covid:nombre "Centro de Salud Málaga Centro",
+        "Pfizer-BioNTech" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna009/dosis/nombre> covid:nombre "Hospital La Paz",
+        "Moderna" .
+
+<http://www.semanticweb.org/grupo5/covid-ontology#vacunacion/vacuna010/dosis/nombre> covid:nombre "Centro de Salud Murcia Sur",
+        "Johnson & Johnson" .
+
