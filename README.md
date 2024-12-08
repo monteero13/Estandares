@@ -1,5 +1,12 @@
 # PROYECTO FINAL
 
+## Miembros del grupo:
+1. Alberto Montero Solera
+2. Alexandra Rodríguez Serantes
+3. Borja Pérez Herencia
+4. María José Hidalgo Rodríguez
+5. Mario Perales Díaz
+
 <details>
   <summary><h2>T2 - Documentos XML y vistas HTML mediante XSLT</h2></summary>
 
