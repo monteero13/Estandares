@@ -1,0 +1,76 @@
+PREFIX : <http://www.semanticweb.org/mjhr0/covidhosp#>
+
+# Consulta 1: Obtener todos los pacientes con diagnóstico "Confirmado" y severidad "Crítico".
+
+SELECT ?id_paciente ?nombre_paciente
+WHERE {
+  ?caso a :casos ; 
+        :id_paciente ?id_paciente ;
+        :nombre_paciente ?nombre_paciente ;
+        :diagnostico "Confirmado" ;
+        :severidad_casos "Critico" .  #  Usamos severidad_casos
+}
+
+
+
+# Consulta 2: Listar los pacientes que requirieron ventilación mecánica y el nombre del hospital.
+
+SELECT ?id_paciente ?nombre_hospital
+WHERE {
+  ?hospitalizacion :id_paciente ?id_paciente ;
+                   :nombre_hospital ?nombre_hospital ;
+                   :ventilacion_mecanica true .
+}
+
+
+
+# Consulta 3: Encontrar el número de dosis de vacuna y el fabricante para cada paciente.
+
+SELECT ?id_paciente ?dosis_vacunacion ?fabricante
+WHERE {
+  ?vacunacion a :vacunaciones ;
+              :es_vacuna_de ?caso .
+  ?caso :id_paciente ?id_paciente .
+  ?vacunacion :dosis_vacunacion ?dosis_vacunacion ;
+              :fabricante ?fabricante . 
+}
+
+
+
+# Consulta 4: Obtener los pacientes que tuvieron un resultado de PCR "Positivo" y están hospitalizados.
+
+SELECT ?id_paciente ?nombre
+WHERE {
+  ?caso a :casos ;
+        :nombre_paciente ?nombre ;
+        :id_paciente ?id_paciente;
+        :hospitalizado true ;
+        :se_ha_hecho_prueba ?prueba .
+  ?prueba :tipo_prueba "PCR" ;
+          :resultado_prueba "Positivo" .
+}
+
+# Consulta 5: Listar los medicamentos y sus proveedores para los pacientes en la UCI.
+
+SELECT ?id_paciente ?medicamento ?nombre_proveedor
+WHERE {
+  ?hospitalizacion a :hospitalizaciones ; 
+                   :id_paciente ?id_paciente ;
+                   :unidad "UCI" ;
+                   :medicamento ?medicamento ;
+                   :nombre_proveedor ?nombre_proveedor .
+}
+
+# Consulta 6: Encontrar pacientes con síntomas específicos en una fecha determinada.
+
+SELECT ?paciente ?sintomas
+WHERE {
+  ?caso a :casos;
+        :id_paciente ?paciente;
+        :historial_sintomas ?historial.
+  ?caso :sintomas ?sintomas .
+  ?caso :fecha_casos ?fecha.
+  FILTER regex(?sintomas, "fiebre", "i") 
+  FILTER (?fecha = "2023-10-15")
+  FILTER (?historial = ?sintomas)
+}
