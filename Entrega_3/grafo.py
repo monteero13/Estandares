@@ -114,7 +114,7 @@ def read_sparql_queries(filepath):
     return result
 
 # Leer consultas y cabeceras desde el archivo
-queries_with_headers = read_sparql_queries("consultas.sparql")
+queries_with_headers = read_sparql_queries("consultaspy.txt")
 
 # Ejecutar y mostrar los resultados de cada consulta
 for header, query in queries_with_headers:
